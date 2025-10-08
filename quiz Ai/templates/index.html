@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Selamat Datang di Kuis: Kecerdasan Buatan dalam Python 🤖</h1>
+<form method="get" action="/">
+  <label for="city">Masukkan Nama Kota:</label>
+  <input type="text" name="city" placeholder="Contoh: Bandung" required>
+  <button type="submit">Lihat Cuaca</button>
+</form>
+{% if weather_data %}
+  <h2>Perkiraan Cuaca 3 Hari ke Depan</h2>
+  <table>
+    <tr><th>Tanggal</th><th>Suhu Siang (°C)</th><th>Suhu Malam (°C)</th></tr>
+    {% for date, day, night in weather_data %}
+    <tr><td>{{ date }}</td><td>{{ day }}</td><td>{{ night }}</td></tr>
+    {% endfor %}
+  </table>
+{% else %}
+  <p>Masukkan kota untuk melihat perkiraan cuaca.</p>
+{% endif %}
+{% endblock %}

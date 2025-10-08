@@ -1,0 +1,15 @@
+body {font-family:'Poppins',sans-serif;background-color:#f9f9f9;color:#333;margin:0;padding:0;}
+header {background-color:#0077b6;color:white;padding:10px 0;text-align:center;}
+nav a {color:white;text-decoration:none;margin:0 15px;font-weight:bold;}
+nav a:hover {text-decoration:underline;}
+main {max-width:700px;margin:30px auto;background:white;padding:20px;border-radius:10px;box-shadow:0px 2px 8px rgba(0,0,0,0.1);}
+h1,h2,h3 {color:#023e8a;text-align:center;}
+form {display:flex;flex-direction:column;gap:10px;}
+input[type="text"],input[type="password"] {padding:8px;border:1px solid #ccc;border-radius:6px;}
+button {background-color:#0077b6;color:white;border:none;padding:10px;border-radius:6px;cursor:pointer;transition:0.3s;}
+button:hover {background-color:#023e8a;}
+table {width:100%;border-collapse:collapse;margin-top:15px;}
+table th,table td {border:1px solid #ccc;padding:8px;text-align:center;}
+table th {background-color:#caf0f8;}
+.flash {background:#ffdddd;border:1px solid #f08080;padding:8px;border-radius:6px;list-style:none;color:#900;}
+footer {text-align:center;background-color:#0077b6;color:white;padding:10px;position:fixed;bottom:0;width:100%;}

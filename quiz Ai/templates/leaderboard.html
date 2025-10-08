@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Papan Peringkat Kuis</h2>
+<table>
+  <tr><th>Nama Pemain</th><th>Skor</th></tr>
+  {% for player in players %}
+  <tr><td>{{ player.username }}</td><td>{{ player.score }}</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

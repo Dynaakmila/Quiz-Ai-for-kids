@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Masuk ke Akun Anda</h2>
+<form method="POST">
+  <label>Username:</label><input type="text" name="username" required>
+  <label>Password:</label><input type="password" name="password" required>
+  <button type="submit">Login</button>
+</form>
+<p>Belum punya akun? <a href="{{ url_for('register') }}">Daftar di sini</a>.</p>
+{% endblock %}
