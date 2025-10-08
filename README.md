@@ -36,7 +36,7 @@ Sebuah website kuis edukatif berbasis **Python (Flask)** yang dirancang untuk me
    ```bash
    python app.py
 
-#🌐 Akses web
+# 🌐 Akses web
 🔗 Website: https://dynakmila17.pythonanywhere.com/
 
    
